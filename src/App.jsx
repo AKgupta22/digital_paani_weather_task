@@ -37,7 +37,7 @@ function App() {
           lon: lon
         }
       })
-      console.log(response.data, 'forecast');
+      setForeCast(response.data)
       setIsLoading(false)
     }
     catch (e) {
